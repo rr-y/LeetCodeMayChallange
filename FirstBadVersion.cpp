@@ -1,0 +1,20 @@
+// Problem Link --> https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3316/
+// Idea -> Binary Search
+class Solution {
+public:
+    int firstBadVersion(int n) {
+        int low = 1, high = n;
+        int ans=-1;
+        while(low <= high){
+            int mid = low + (high-low)/2;
+            if(isBadVersion(mid)){
+                ans = mid;
+                high = mid-1;
+            }
+            else{
+                low = mid+1;
+            }
+        }
+        return ans;
+    }
+};
