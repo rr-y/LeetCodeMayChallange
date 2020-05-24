@@ -1,5 +1,5 @@
 // Problem Link --> https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3316/
-// Idea -> Binary Search
+// Idea -> Binary Search Operation
 class Solution {
 public:
     int firstBadVersion(int n) {
